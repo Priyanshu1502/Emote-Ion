@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import "tailwindcss/tailwind.css";
 
-const cards = Array.from({ length: 12 }, (_, i) => ({
+const cards = Array.from({ length: 6 }, (_, i) => ({
   id: i,
   image: "https://via.placeholder.com/150",
   text: `Card ${i + 1}`,
@@ -26,7 +26,7 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <div className="w-full overflow-hidden bg-blue-500 py-10 relative">
+        <div className="mt-6 w-full overflow-hidden bg-blue-500 py-10 relative">
           <div
             className={`flex gap-6 whitespace-nowrap scrolling-container ${
               isHovered ? "scrolling-paused" : ""
@@ -39,7 +39,7 @@ const Home = () => {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                <Card sx={{ width: 200, height: 250 }}>
+                <Card sx={{ width: 275, height: 325 }}>
                   <CardMedia
                     component="img"
                     height="140"
