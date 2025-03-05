@@ -14,14 +14,25 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#42d5cc" }}>
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+    <AppBar position="sticky" sx={{ backgroundColor: "black", height: 80 }}>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          margin: "0 5%",
+          alignItems: "center",
+          marginTop: 1,
+        }}
+      >
         {/* Image Section */}
-        <img
-          src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/logonew-1500h.png"
-          alt="Logo"
-          style={{ width: 48, height: 48 }}
-        />
+        <div className="flex flex-row items-center gap-2">
+          <img
+            src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/logonew-1500h.png"
+            alt="Logo"
+            style={{ width: 48, height: 48 }}
+          />
+          <p className=" font-bold text-2xl hidden md:flex">EMOTE-ION</p>
+        </div>
 
         {/* Menu Button (Visible on Mobile & Tablet) */}
         <IconButton
@@ -35,26 +46,59 @@ export default function Header() {
         </IconButton>
 
         {/* Navigation Items (Desktop View) */}
-        <Box sx={{ display: { xs: "none", md: "flex" }, gap: 2 }}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Contact Us</Button>
-          <Button color="inherit">Blog</Button>
+        <Box
+          sx={{
+            display: { xs: "none", md: "flex" },
+            gap: 4,
+            color: "#757372",
+          }}
+        >
+          <Button color="inherit" sx={{ fontWeight: "500" }}>
+            Home
+          </Button>
+          <Button color="inherit" sx={{ fontWeight: "500" }}>
+            Contact Us
+          </Button>
+          <Button color="inherit" sx={{ fontWeight: "500" }}>
+            About
+          </Button>
+          <Button
+            color="inherit"
+            sx={{
+              backgroundColor: "#ff773d",
+              color: "black",
+              borderRadius: 0,
+              paddingLeft: 2,
+              paddingRight: 2,
+              fontWeight: "600",
+            }}
+          >
+            Blogs
+          </Button>
         </Box>
       </Toolbar>
 
       {/* Drawer for Mobile Navigation */}
-      <Drawer anchor="right" open={isOpen} onClose={() => setIsOpen(false)}>
+      <Drawer
+        anchor="right"
+        sx={{ "& .MuiDrawer-paper": { backgroundColor: "black" } }}
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+      >
         <Box sx={{ width: 250, p: 2 }}>
           <IconButton onClick={() => setIsOpen(false)}>
-            <CloseIcon />
+            <CloseIcon sx={{ color: "white" }} />
           </IconButton>
-          <Button fullWidth color="inherit">
+          <Button fullWidth sx={{ color: "white" }}>
             Home
           </Button>
-          <Button fullWidth color="inherit">
+          <Button fullWidth sx={{ color: "white" }}>
             Contact Us
           </Button>
-          <Button fullWidth color="inherit">
+          <Button fullWidth sx={{ color: "white" }}>
+            About
+          </Button>
+          <Button fullWidth sx={{ backgroundColor: "#ff773d", color: "white" }}>
             Blog
           </Button>
         </Box>

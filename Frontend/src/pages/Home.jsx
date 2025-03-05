@@ -1,59 +1,62 @@
 import React from "react";
 import Header from "../components/Header";
 import { useState } from "react";
-import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import "tailwindcss/tailwind.css";
 
-const cards = Array.from({ length: 6 }, (_, i) => ({
-  id: i,
-  image: "https://via.placeholder.com/150",
-  text: `Card ${i + 1}`,
-}));
-
 const Home = () => {
-  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div>
+    <div className="bg-black min-h-screen text-white font-[lexend] pl-4 pr-4">
       <Header />
-      <div className="flex justify-center items-center flex-col mt-4">
-        <img src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/screenshot%202023-12-21%20160823-800w.png" />
-        <p className="text-center font-serif mt-4 ">
-          EMOTE-ION enhances existing technologies by integrating emotion
-          recognition to improve safety, efficiency, and user experience. By
-          combining AI-driven emotion detection with current systems, we aim to
-          reduce accidents, enhance human-machine interaction, and revolutionize
-          real-time monitoring across industries.
-        </p>
+      <div className="flex justify-center items-center flex-col mt-4 md:mt-10 ">
+        <div className="flex justify-center items-center text-center flex-col text-3xl md:text-7xl font-bold">
+          <p className="  ">Unleashing the Power of</p>
+          <p className="  ">Emotion: Real-Time Dowsiness Detection</p>
+        </div>
+        <div className="flex justify-center text-[#878785] text-center font-Golos items-center flex-col text-lg mt-6 md:mt-10 md:text-2xl">
+          <p className=" ">
+            Welcome to EMOTE-ION, the revolutionary startup dedicated to
+            preventing road
+          </p>
+          <p className="">
+            accidents through cutting-edge emotion recognition technology
+          </p>
+        </div>
       </div>
-      <div>
-        <div className="mt-6 w-full overflow-hidden bg-blue-500 py-10 relative">
-          <div
-            className={`flex gap-6 whitespace-nowrap scrolling-container ${
-              isHovered ? "scrolling-paused" : ""
-            }`}
-          >
-            {[...cards, ...cards].map((card, index) => (
-              <div
-                key={index}
-                className="transform transition-transform duration-300 hover:scale-105 card-item"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                <Card sx={{ width: 275, height: 325 }}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image={card.image}
-                    alt={card.text}
-                  />
-                  <CardContent>
-                    <Typography variant="h6" color="textPrimary">
-                      {card.text}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
+      <div className="flex flex-col md:flex-row mt-10 items-center justify-center ">
+        <img
+          src="https://cdn-imgs.dora.run/design/o4UJ0nG2PvKP4xACg1xZx.webp/w/4096/h/4096/format/webp?"
+          className=" min-h-20 min-w-screen object-cover"
+        />
+        <div className="flex flex-col font-Golos mt-5">
+          <div>
+            <h2 className="text-xl ">Detect Drowsiness</h2>
+            <p className="text-md text-[#878785] mt-2">
+              Cutting-Edge Emotion Recognition
+            </p>
+          </div>
+          <div className="mt-5">
+            <h2 className="text-xl ">Prevents Accidents</h2>
+            <p className="text-md text-[#878785] mt-2">
+              Innovatibe AI-Powered Solution
+            </p>
+          </div>
+          <div className="mt-5">
+            <h2 className="text-xl ">Enhances Driver Safety</h2>
+            <p className="text-md text-[#878785] mt-2">
+              Revolutionize Road Safety
+            </p>
+          </div>
+          <div className="mt-5">
+            <h2 className="text-xl ">Real-Time Monitoring</h2>
+            <p className="text-md text-[#878785] mt-2">
+              Comprehensive Drowsiness Detection System
+            </p>
+          </div>
+          <div className="mt-5">
+            <h2 className="text-xl ">Personalized Alerts</h2>
+            <p className="text-md text-[#878785] mt-2">
+              Advanced Algorithms for Optimal Performance
+            </p>
           </div>
         </div>
       </div>

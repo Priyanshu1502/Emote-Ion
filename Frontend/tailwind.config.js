@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Lexend: ["Lexend", "sans-serif"],
+        Golos: ["Golos Text", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
