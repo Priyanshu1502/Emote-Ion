@@ -19,7 +19,6 @@ export default function Header() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          margin: "0 5%",
           alignItems: "center",
           marginTop: 1,
         }}
@@ -53,16 +52,17 @@ export default function Header() {
             color: "#757372",
           }}
         >
-          <Button color="inherit" sx={{ fontWeight: "500" }}>
+          <Button href="/" color="inherit" sx={{ fontWeight: "500" }}>
             Home
           </Button>
-          <Button color="inherit" sx={{ fontWeight: "500" }}>
+          <Button href="/contact" color="inherit" sx={{ fontWeight: "500" }}>
             Contact Us
           </Button>
-          <Button color="inherit" sx={{ fontWeight: "500" }}>
+          <Button href="/about" color="inherit" sx={{ fontWeight: "500" }}>
             About
           </Button>
           <Button
+            href="https://mern-blog-hrhj.onrender.com/"
             color="inherit"
             sx={{
               backgroundColor: "#ff773d",

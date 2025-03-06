@@ -7,7 +7,10 @@ export default {
         Lexend: ["Lexend", "sans-serif"],
         Golos: ["Golos Text", "sans-serif"],
       },
+      backgroundImage: {
+        car: "url('/car.webp')",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
