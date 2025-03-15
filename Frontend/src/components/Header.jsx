@@ -56,10 +56,10 @@ export default function Header() {
             Home
           </Button>
           <Button href="/contact" color="inherit" sx={{ fontWeight: "500" }}>
-            Contact Us
+            Contact
           </Button>
           <Button href="/about" color="inherit" sx={{ fontWeight: "500" }}>
-            About
+            About Us
           </Button>
           <Button
             href="https://mern-blog-hrhj.onrender.com/"
@@ -89,16 +89,20 @@ export default function Header() {
           <IconButton onClick={() => setIsOpen(false)}>
             <CloseIcon sx={{ color: "white" }} />
           </IconButton>
-          <Button fullWidth sx={{ color: "white" }}>
+          <Button href="/" fullWidth sx={{ color: "white" }}>
             Home
           </Button>
-          <Button fullWidth sx={{ color: "white" }}>
-            Contact Us
+          <Button href="/contact" fullWidth sx={{ color: "white" }}>
+            Contact
           </Button>
-          <Button fullWidth sx={{ color: "white" }}>
-            About
+          <Button href="/about" fullWidth sx={{ color: "white" }}>
+            About Us
           </Button>
-          <Button fullWidth sx={{ backgroundColor: "#ff773d", color: "white" }}>
+          <Button
+            href="https://mern-blog-hrhj.onrender.com/"
+            fullWidth
+            sx={{ backgroundColor: "#ff773d", color: "white" }}
+          >
             Blog
           </Button>
         </Box>

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import { useState } from "react";
 import "tailwindcss/tailwind.css";
 import { Button } from "@mui/material";
@@ -7,7 +6,6 @@ import { Button } from "@mui/material";
 const Home = () => {
   return (
     <div className="bg-[#03040b] min-h-screen text-white font-[lexend] pl-4 pr-4 pb-5">
-      <Header />
       <div className="flex justify-center items-center flex-col mt-4 md:mt-16 ">
         <div className="flex justify-center items-center text-center flex-col text-3xl md:text-7xl font-bold">
           <p className="  ">Unleashing the Power of</p>
@@ -238,15 +236,6 @@ const Home = () => {
             </Button>
           </div>
         </div>
-      </div>
-
-      <div className="bg-white h-1 mt-10"></div>
-      <div className="flex justify-between items-center mt-5 ml-6 mr-6">
-        <img src="/insta.webp" className="w-8 h-8" />
-        <img src="/linkedin.webp" className="w-8 h-8" />
-      </div>
-      <div className="flex justify-center items-center mt-5">
-        <p>&copy; 2024 EMOTE-ION. All rights reserved.</p>
       </div>
     </div>
   );
