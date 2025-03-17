@@ -29,8 +29,11 @@ export default function Header() {
             src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/logonew-1500h.png"
             alt="Logo"
             style={{ width: 48, height: 48 }}
+            href="/"
           />
-          <p className=" font-bold text-2xl hidden md:flex">EMOTE-ION</p>
+          <p className=" font-bold text-2xl hidden md:flex" href="/">
+            EMOTE-ION
+          </p>
         </div>
 
         {/* Menu Button (Visible on Mobile & Tablet) */}

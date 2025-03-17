@@ -222,7 +222,10 @@ const Home = () => {
               drowsiness detection. Our cutting-edge AI-driven solutions aim to
               prevent accidents and save lives
             </p>
-            <p className="text-lg md:ml-4 text-[#5a89a4] md:mt-10 mt-5  font-Golos">
+            <p
+              href="/contact"
+              className="text-lg md:ml-4 text-[#5a89a4] md:mt-10 mt-5  font-Golos"
+            >
               Partner with Us
             </p>
             <Button
