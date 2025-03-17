@@ -69,6 +69,7 @@ const About = () => {
               borderRadius: { md: "50px", xs: "50px" },
               fontSize: { md: "16px" },
             }}
+            href="/contact"
           >
             Contact Us
           </Button>
@@ -103,7 +104,7 @@ const About = () => {
             <h3 className="text-center font-bold mt-3">Kshitij Pratap Tomer</h3>
             <h2 className="text-center text-[#727479]">Tech Team Lead I</h2>
           </div>
-          <div className="w-5/12 h-48 md:h-[24rem] md:w-[20rem] md:flex md:items-center md:flex-col">
+          <div className="w-5/12 h-48 md:h-[24rem] md:w-[20rem] md:flex md:items-center md:flex-col mt-[6rem] md:mt-0">
             <img
               src="kanahiya.png"
               className="rounded-xl h-full md:h-[24rem] md:w-[20rem]  "

@@ -61,6 +61,9 @@ export default function Header() {
           <Button href="/about" color="inherit" sx={{ fontWeight: "500" }}>
             About Us
           </Button>
+          <Button href="/carrer" color="inherit" sx={{ fontWeight: "500" }}>
+            Carrer
+          </Button>
           <Button
             href="https://mern-blog-hrhj.onrender.com/"
             color="inherit"
@@ -97,6 +100,9 @@ export default function Header() {
           </Button>
           <Button href="/about" fullWidth sx={{ color: "white" }}>
             About Us
+          </Button>
+          <Button href="/carrer" fullWidth sx={{ color: "white" }}>
+            Carrer
           </Button>
           <Button
             href="https://mern-blog-hrhj.onrender.com/"

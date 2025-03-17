@@ -84,6 +84,9 @@ const Home = () => {
                 fontWeight: { md: "bold" },
                 color: "#615836",
               }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://emoteionmain-5hzda4f44ll3depnypk9w3.streamlit.app/"
             >
               Let's try it
             </Button>
@@ -144,6 +147,7 @@ const Home = () => {
               fontSize: { md: "16px" },
               fontWeight: { md: "bold" },
             }}
+            href="/about"
           >
             About us
           </Button>
@@ -231,6 +235,7 @@ const Home = () => {
                 fontSize: { md: "20px" },
                 fontWeight: { md: "bold" },
               }}
+              href="/contact"
             >
               Join us
             </Button>
