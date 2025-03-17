@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,17 +25,16 @@ export default function Header() {
         }}
       >
         {/* Image Section */}
-        <div className="flex flex-row items-center gap-2">
-          <img
-            src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/logonew-1500h.png"
-            alt="Logo"
-            style={{ width: 48, height: 48 }}
-            href="/"
-          />
-          <p className=" font-bold text-2xl hidden md:flex" href="/">
-            EMOTE-ION
-          </p>
-        </div>
+        <Link to="/">
+          <div className="flex flex-row items-center gap-2 cursor-pointer">
+            <img
+              src="https://outstanding-motherly-penguin-gwu7pf.teleporthq.app/logonew-1500h.png"
+              alt="Logo"
+              style={{ width: 48, height: 48 }}
+            />
+            <p className=" font-bold text-2xl hidden md:flex">EMOTE-ION</p>
+          </div>
+        </Link>
 
         {/* Menu Button (Visible on Mobile & Tablet) */}
         <IconButton

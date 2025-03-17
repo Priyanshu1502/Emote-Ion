@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "tailwindcss/tailwind.css";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -224,9 +225,9 @@ const Home = () => {
             </p>
             <p
               href="/contact"
-              className="text-lg md:ml-4 text-[#5a89a4] md:mt-10 mt-5  font-Golos"
+              className="text-lg md:ml-4 text-[#5a89a4] md:mt-10 mt-5 cursor-pointer font-Golos"
             >
-              Partner with Us
+              <Link to="/contact">Partner with Us</Link>
             </p>
             <Button
               sx={{
